@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_1">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#40DC7E"
+        app:titleTextColor="@color/white"
+        app:title="Credit"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtammount"
+            android:layout_width="210dp"
+            android:layout_height="45dp"
+            android:layout_weight=".6"
+            android:hint="Enter Amount"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/custom_input"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawableTint="#605D5D"
+            android:drawableStart="@drawable/rupees"
+            android:drawablePadding="12dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvcal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_weight=".3"
+            android:textColor="@color/white"
+            android:text="dd/mm/yy"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/imgCal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight=".1"
+            android:src="@drawable/calendar"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtincome"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btncredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Credit"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:onClick="btnCredit"
+        android:background="@drawable/gradient_2"/>
+
+</LinearLayout>

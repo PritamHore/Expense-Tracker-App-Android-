@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp3"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        app:titleTextColor="@color/white"
+        app:title="Expense Tracker"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Ballance 00.00"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        app:fabCustomSize="40dp"-->
+<!--        app:backgroundTint="@color/colorPrimary"-->
+<!--        android:foregroundGravity="center"-->
+<!--        android:src="@drawable/add"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:onClick="addUser"/>-->
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:tint="@color/white"
+        app:backgroundTint="#F1DE36"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/rupee"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:padding="30dp"
+        app:tint="@color/white"
+        app:backgroundTint="#19D621"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible"
+        android:src="@drawable/icon_add" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:padding="30dp"
+        app:tint="@color/white"
+        app:backgroundTint="#E91E63"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible"
+        android:src="@drawable/icon_minus" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
